@@ -28,3 +28,39 @@ body{
 .navegacion-principal{
     background-color: var(--secundario);
 }
+
+.contenedor{
+    width: 120rem;
+    /*margin-top:0;
+    margin-bottom:0;
+    margin-left:auto;
+    margin-right:auto;*/
+    margin: 0 auto 0 auto;
+}
+
+.nav-bag{
+    background-color: var(--secundario);
+}
+
+/*.navegacion-principal a{
+    background-color: var(--primeario);
+}*/
+
+/*.navegacion-principal a{
+    display: block;
+}*/
+
+.navegacion-principal{
+    padding: 1rem;
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: underline;
+}
+
+.navegacion-principal{
+    display: flex;
+    justify-content: center;
+}
+
