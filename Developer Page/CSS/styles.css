@@ -51,15 +51,28 @@ body{
 }*/
 
 .navegacion-principal{
-    padding: 1rem;
+    display: flex;
+    /* justify-content es para filas
+    align-itmes es para columnas (flex-direction)*/
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: bold; /* negritas */
 }
 
 .navegacion-principal a{
+    padding: 1rem;
     color: var(--blanco);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
+.navegacion-principal a:hover{
+    background-color: var(--primeario);
+    color: var(--ocuro);
+}
+
+/*
 .navegacion-principal{
     display: flex;
     justify-content: center;
 }
+*/
