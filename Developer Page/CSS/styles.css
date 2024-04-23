@@ -70,9 +70,21 @@ body{
     color: var(--ocuro);
 }
 
-/*
-.navegacion-principal{
-    display: flex;
-    justify-content: center;
+/* tamaños recomendados para media query
+480px para moviles
+768px para tabletas
+1140px para laptops
+1400 para dispositivos mas grandes*/
+body{
+    background-color: beige;
 }
-*/
+@media (min-width: 480px) {
+    body{
+        background-color:blue;
+    }
+}
+@media (min-width: 768px) {
+    body{
+        background-color:cornflowerblue;
+    }
+}
