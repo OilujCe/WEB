@@ -9,17 +9,37 @@
 
 html{
     font-size: 62.5%;
-    
+    box-sizing: border-box;
 }
+
+*, *:before, *:after{
+    box-sizing: inherit;
+} /*hacks para box mode*/
 
 body{
     font-size: 16px;
 }
 
+/*Tipografia*/
+h1{
+    font-size: 3.8re,;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1, h2, h3{
+    text-align: center;
+}
+
+/*
 .titulo{
     text-align: center;
     font-size: 3.8rem;
 }
+*/
 
 .titulo span{
     font-size: 2rem;
@@ -30,7 +50,7 @@ body{
 }
 
 .contenedor{
-    width: 120rem;
+    max-width: 190rem;
     /*margin-top:0;
     margin-bottom:0;
     margin-left:auto;
@@ -52,11 +72,20 @@ body{
 
 .navegacion-principal{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     /* justify-content es para filas
     align-itmes es para columnas (flex-direction)*/
     justify-content: space-between;
     font-size: 2rem;
     font-weight: bold; /* negritas */
+}
+
+@media (min-width: 768px){
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .navegacion-principal a{
@@ -75,6 +104,50 @@ body{
 768px para tabletas
 1140px para laptops
 1400 para dispositivos mas grandes*/
+
+.hero{
+    background-image: url(../image/hero.jpg); /*los dos puntos diagonal es para regresar un nivel en el directorio, la carpeta img esta afuera de styles.css*/
+    background-repeat: no-repeat; /*en imagens pequeñas suelen repetirse para abarcar toda la pantalla*/
+    background-size: cover; /*sirve para cubrir la imagen con todo el tamaño de la pantalla*/
+    height: 450px; /*alto del elemento hero*/
+    position: relative; /*para manipular la posicion, el padre siempre de ser relativa */
+}
+
+.contenedor-hero{
+    position: absolute; /* para manipular la posicion, el hijo siempre debe de ser absoluto*/
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-hero p, .contenedor-hero h2{
+    color: var(--blanco)
+}
+
+.ubicacion{
+    display: flex;
+    align-items: flex-end;
+}
+
+.boton{
+    background-color: var(--secundario);
+    color: var(var(--blanco)); /*color de texto*/
+    padding: 1rem 3rem;
+    margin-top: 3rem; /*Separacion superior*/
+    font-size: 2rem;
+    text-decoration: none; /*Quitar el subrayado*/
+    text-transform: uppercase; /*cnvertir texxto en mayuscula*/
+    font-weight: bold; /*poner texot en negritas*/
+    border-radius: .5rem; /*esquinas redondeadas*/
+    width: 90%; /*ancho del boton*/
+    text-align: center; /*centrar el texto del boton*/
+}
+/*
 body{
     background-color: beige;
 }
@@ -88,3 +161,4 @@ body{
         background-color:cornflowerblue;
     }
 }
+*/
