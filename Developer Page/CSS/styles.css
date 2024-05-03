@@ -144,6 +144,7 @@ h1, h2, h3{
     width: 90%; /*ancho del boton*/
     text-align: center; /*centrar el texto del boton*/
 }
+
 @media (min-width: 768px){
     .boton{
         width: auto;
@@ -158,4 +159,39 @@ h1, h2, h3{
     padding: 2rem;
     border-radius: 1rem;
     margin-top: 2rem;
+}
+
+/*Servicios*/
+
+@media (min-width: 768px){
+    .servicios{
+        display: grid;
+        /*grid-template-columns: 1fr 1fr 1fr;  (alternativa sencilla)*/
+        /*grid-template-columns: 33.3% 33.3% 33.3%; (alternativa porcentaje)*/
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .servicio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*ajustar color y tipo de h3*/
+    .servicio h3{
+        color: var(--secundario);
+        font-weight: normal;
+    }
+    .servicio p{
+        text-align: center;
+        /*interlineado*/
+        line-height: 2;
+    }
+    .iconos{
+        height: 15rem;
+        width: 15rem;
+        background-color: var(--primeario);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
