@@ -48,7 +48,7 @@
     <main class="sombra">
         <h2>Mis servicios</h2>
         <div class="servicios">
-            <section class="servicio"">
+            <section class="servicio">
                 <h3>Diseño web</h3>
                     <div class="iconos">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -100,38 +100,40 @@
                     
             </section>
         </div>
-    </main>
     <section>
     <h2>Contacto</h2>
-    <form>
+    <form class="formulario">
         <fieldset>
             <legend>Contactanos llenando todos los datos</legend>
-            <div>
-                <label>Nombre</label>
-                <input type="text" placeholder="Tu nombre">
-            </div>
-            <div>
-                <label for="Telefono"></label>
-                <input type="tel" placeholder="Tu telefono">
-            </div>
-            <div>
-                <label for="Correo electronico"></label>
-                <input type="email" placeholder="Tu correo">
-            </div>
+            <div class="contenedor-campos">
+                <div class="campo">
+                    <label>Nombre</label>
+                    <input class="input-text" type="text" placeholder="Tu nombre">
+                </div>
+                <div class="campo">
+                    <label>Telefono</label>
+                    <input class="input-text" type="tel" placeholder="Tu telefono">
+                </div>
+                <div class="campo">
+                    <label>Correo</label>
+                    <input class="input-text" type="email" placeholder="Tu correo">
+                </div>
 
-            <div>
-                <label>Mensaje</label>
-                <textarea></textarea>
-            </div>
-            <div>
-                <input type="submit" value="Enviar">
+                <div class="campo">
+                    <label>Mensaje</label>
+                    <textarea class="input-text"></textarea>
+                </div>
+            </div><!--Cierre contenedor campus-->
+            <div class="alinear-derecha flex">
+                <input class="boton w-sm-100" type="submit" value="Enviar">
             </div>
         </fieldset>
-    </form>
+        </form>
     </section>
-    </footer>
-    <h3>999-999-9999</h3>
-    <p>Todos los derechos resevados ©. Julio Cesar Flores Chavez </p>
+    </main>
+    <footer class="footer">
+        <h3>999-999-9999</h3>
+        <p>Todos los derechos resevados ©. Julio Cesar Flores Chavez </p>
     </footer>
 </body>
 </html>
